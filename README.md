@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Hangman Game - React Capstone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This is a simple Hangman game built using React. The game challenges users to guess a hidden word, letter by letter, before exceeding the maximum number of incorrect attempts.
 
-## Available Scripts
+## Features
+- Random word selection from a predefined word list.
+- Interactive keyboard for letter selection.
+- Displays progress with correctly guessed letters.
+- Winning and losing conditions are clearly indicated.
+- A restart button to reset the game.
+- A help modal explaining the game rules.
+- Responsive and user-friendly design.
 
-In the project directory, you can run:
+## Game Rules
+1. A random word is selected at the start of the game.
+2. The word is displayed as underscores, with each underscore representing a letter.
+3. The player selects letters using the on-screen keyboard.
+4. If the selected letter is in the word, it will be revealed in the correct position.
+5. If the letter is incorrect, it counts as a wrong guess.
+6. The player has a limited number of wrong guesses (e.g., 6) before losing.
+7. If the player correctly guesses all the letters before running out of attempts, they win.
+8. The game provides an option to restart at any time.
 
-### `npm start`
+## Installation and Running the App
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+Ensure you have the following installed on your system:
+- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+- npm (Comes with Node.js)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Steps to Install and Run Locally
+1. **Clone the repository:**
+   ```sh
+   git clone <your-github-repo-url>
+   ```
+2. **Navigate to the project directory:**
+   ```sh
+   cd hangman-game
+   ```
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+4. **Start the development server:**
+   ```sh
+   npm start
+   ```
+5. **Open the game in your browser:**
+   - The app will usually be available at `http://localhost:3000/`.
 
-### `npm test`
+## Deployment
+To deploy the app, run the following command to build the project:
+```sh
+npm run build
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
