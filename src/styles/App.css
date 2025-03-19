@@ -119,3 +119,8 @@ body {
   cursor: pointer;
   border-radius: 4px;
 }
+.hangman-image {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
